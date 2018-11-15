@@ -1,0 +1,4 @@
+papucs 9 ena 1 
+piskota 18 dva 2 
+macska 32 tri 3 
+puska 69 stiri 4
