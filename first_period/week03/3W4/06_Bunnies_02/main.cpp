@@ -6,12 +6,16 @@
 // number of "ears" in the bunny line 1, 2, ... n (without loops or multiplication).
 // Odd - 2
 
-int bunnyEars (int bunnyOdd, int bunnyEven) {
-    if (bunnyOdd < 1) {
+int bunnyEars(int bunny) {
+    if (bunny < 1) {
         return 0;
-    } else
+    } else if (bunny % 2 != 0) {
 
-        return 2 + bunnyEars(bunnyOdd-1);
+        return 2 + bunnyEars(bunny - 1);
+
+    } else {
+        return 3 + bunnyEars(bunny - 1);
+    }
 }
 
 int main() {
