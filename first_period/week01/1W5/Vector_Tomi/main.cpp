@@ -1,10 +1,5 @@
 #include <iostream>
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
-}
-
 
 // Create a method that takes two integer lists as a parameter
 // and returns an integer list with the mutual elements from the lists.
@@ -28,3 +23,29 @@ int main() {
 // vegigloopolsz a vektoron es csekkolod h a masik contains
 //a igen akkor beteszed a result vektorba
 //ha nincs akkor meg returnolsz egy ures vektort
+
+int mutual(const int array1[], int array2[], int a1s, int a2s);
+
+int main() {
+    int ar1[] = {1, 1, 2, 3, 3, 4};
+    int ar2[] = {3, 4, 4, 5, 6};
+    int a1s = sizeof(ar1) / sizeof(ar1[0]);
+    int a2s = sizeof(ar2) / sizeof(ar2[0]);
+    mutual(ar1, ar2, a1s, a2s);
+    return 0;
+}
+
+int mutual(const int array1[], int array2[], int a1s, int a2s) {
+    int i = 0, j = 0;
+    while (i < a1s && j < a2s) {
+        if (array1[i] < array2[j])
+            i++;
+        else if (array2[j] < array1[i])
+            j++;
+        else {
+            std::cout << array2[j] << " ";
+            i++;
+            j++;
+        }
+    }
+}

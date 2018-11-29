@@ -19,7 +19,7 @@ int main(int argc, char* args[])
 void appendA(std::vector<std::string> name){
 
     for(int i=0; i < name.size();i++){
-        std::cout << name[i] <<"a";
+        std::cout << name[i] <<"a ";
     }
 
 }
