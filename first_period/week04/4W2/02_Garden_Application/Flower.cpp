@@ -5,17 +5,23 @@
 #include "Flower.h"
 
 
-Flowers::Flowers(std::string color) {
+Flower::Flower(std::string color, int waterLVL) {
     _color = color;
-    _waterLevel = 0;
+    _waterLVL = waterLVL;
 }
 
-bool Flowers::needWater() {
-    if (_waterLevel < 5) {
-        std::cout << "The " << _color << " Flower needs water." << std::endl;
-        return true;
-    } else {
-        std::cout << "The " << _color << " Flower doesnt need water" << std::endl;
-        return false;
-    }
+float Flower::getWaterLVL() {
+    return _waterLVL;
+}
+
+bool Flower::isNeedWater() {
+    return _waterLVL < 5;
+}
+
+void Flower::water(int givenWater) {
+    _waterLVL += givenWater * 0.75;
+}
+
+std::string Flower::getType() {
+    return "Flower";
 }

@@ -3,22 +3,22 @@
 
 #include <iostream>
 #include <vector>
-#include "Plants.h"
-#include "Flowers.h"
-#include "Trees.h"
+#include <string>
 
-class Garden {
+
+class Plant {
 public:
-    Garden();
-    void water(int givenWater);
-    int getstate(std::vector<Plants *> plantsvector);
+    virtual float getWaterLVL() = 0;
 
-    void fillGarden(Plants * plants);
+    virtual bool isNeedWater() = 0;
+
+    virtual void water(int givenWater) = 0;
+
+    virtual std::string getType() = 0;
 
 protected:
-    std::vector<Plants *> _plantsvector;
-    int _givenWater;
+    std::string _color;
+    float _waterLVL;
 };
 
-
-#endif
+#endif //INC_02_PLANT_APPLICATION_TREE_H

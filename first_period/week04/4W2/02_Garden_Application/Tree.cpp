@@ -5,20 +5,26 @@
 #include <iostream>
 #include <vector>
 #include "Tree.h"
-#include "Plants.h"
+#include "Plant.h"
 
 
-Trees::Trees(std::string color) {
+Tree::Tree(std::string color, int waterLVL) {
     _color = color;
-    _waterLevel = 0;
+    _waterLVL = waterLVL;
 }
 
-bool Trees::needWater() {
-    if (_waterLevel < 10) {
-        std::cout << "The " << _color << " Tree needs water." << std::endl;
-        return true;
-    } else {
-        std::cout << "The " << _color << " Tree doesnt needs water" << std::endl;
-        return false;
-    }
+float Tree::getWaterLVL() {
+    return _waterLVL;
+}
+
+bool Tree::isNeedWater() {
+    return _waterLVL < 10;
+}
+
+void Tree::water(int givenWater) {
+    _waterLVL += givenWater * 0.4;
+}
+
+std::string Tree::getType() {
+    return "Tree";
 }

@@ -4,30 +4,24 @@
 #include <iostream>
 #include "Garden.h"
 
-void Garden::water(int givenWater) {
-    _givenWater = givenWater / getstate(_plantsvector);
-    //std::cout << _givenWater << std::endl;
-    for(int j = 0; j < _plantsvector.size(); j++){
-        if(_plantsvector[j]->needWater()){
-            _plantsvector[j]
-        }
-    }
-}
-
-void Garden::fillGarden(Plants *plants) {
-    _plantsvector.push_back(plants);
-}
-
 Garden::Garden() {
-
+std::cout << "I am making a Garden" << std::endl;
 }
 
-int Garden::getstate(std::vector<Plants *> plantsvector) {
-    int counter = 0;
-    for (int i = 0; i < plantsvector.size(); i++) {
-        if (plantsvector[i]->needWater()) {
-            counter++;
+void Garden::water(int waterAmount) {
+    int needwater = 0;
+    for (int i = 0; i < _plants.size(); i++) {
+        if (_plants[i]->isNeedWater()) {
+            needwater++;
         }
     }
-    return counter;
+    for (int j = 0; j < _plants.size(); j++) {
+        if (_plants[j]->isNeedWater()) {
+            _plants[j]->water(waterAmount / needwater);
+        }
+    }
+}
+
+void Garden::addPlant(Plant *plant) {
+    _plants.push_back(plant);
 }

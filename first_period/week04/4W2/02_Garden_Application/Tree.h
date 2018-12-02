@@ -5,15 +5,19 @@
 #ifndef INC_02_GARDEN_APPLICATION_TREE_H
 #define INC_02_GARDEN_APPLICATION_TREE_H
 #include <iostream>
-#include "Plants.h"
+#include "Plant.h"
 
-class Trees : public Plants {
+
+class Tree : public Plant {
 public:
-    Trees(std::string color);
+    Tree(std::string color, int waterLVL);
 
-    bool needWater() override;
+    float getWaterLVL() override;
 
+    bool isNeedWater() override;
+
+    void water(int givenWater) override;
+
+    std::string getType();
 };
-
-
 #endif //INC_02_GARDEN_APPLICATION_TREE_H

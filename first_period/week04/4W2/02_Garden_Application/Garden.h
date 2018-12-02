@@ -4,26 +4,22 @@
 
 #ifndef INC_02_GARDEN_APPLICATION_GARDEN_H
 #define INC_02_GARDEN_APPLICATION_GARDEN_H
-#include <iostream>
-
 
 #include <vector>
-#include "Plants.h"
+#include "Tree.h"
 #include "Flower.h"
-#include "Trees.h"
 
 class Garden {
 public:
     Garden();
-    void water(int givenWater);
-    int getstate(std::vector<Plants *> plantsvector);
 
-    void fillGarden(Plants * plants);
+    void addPlant(Plant *plant);
 
-protected:
-    std::vector<Plants *> _plantsvector;
-    int _givenWater;
+    void water(int waterAmount);
+
+private:
+    std::vector<Plant *> _plants;
 };
 
 
-#endif
+#endif //INC_02_GARDEN_APPLICATION_GARDEN_H

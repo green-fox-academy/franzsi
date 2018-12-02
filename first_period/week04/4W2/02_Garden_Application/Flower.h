@@ -8,14 +8,18 @@
 #include <iostream>
 #include "Plant.h"
 
-class Flowers : public Plants {
+class Flower : public Plant {
 public:
-    Flowers(std::string color);
+    Flower(std::string color, int waterLVL);
 
-    bool needWater() override;
+    float getWaterLVL() override;
 
+    bool isNeedWater() override;
+
+    void water(int givenWater) override;
+
+    std::string getType();
 };
 
-#endif
 
 #endif //INC_02_GARDEN_APPLICATION_FLOWER_H
