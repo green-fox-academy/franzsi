@@ -28,5 +28,10 @@ int main() {
 
     printf("Wow! You are really just %d years old?", age);
 
+    printf("How tall are you?\n");
+    scanf("%.2f", height);
+
+    printf("Wow! You are really just %.2f cm tall?", height);
+
     return 0;
 }
