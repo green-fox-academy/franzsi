@@ -5,10 +5,13 @@
 #ifndef EXERCISE_3_HARD_COVER_BOOK_H
 #define EXERCISE_3_HARD_COVER_BOOK_H
 
+#include "book.h"
 
-class hard_cover_book {
+class HardCoverBook : public Book
+{
+public:
+    HardCoverBook(const std::string &title, const std::string &author, int releaseYear, int pageNumber);
 
 };
-
 
 #endif //EXERCISE_3_HARD_COVER_BOOK_H
