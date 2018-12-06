@@ -1,0 +1,9 @@
+Exercise 2
+Write a method which can read and parse a file containing information about weather in various cities. The method must return the name of the city which had the most rainy days.
+
+Example
+Example file can be found here.
+
+Output
+
+Gyor
