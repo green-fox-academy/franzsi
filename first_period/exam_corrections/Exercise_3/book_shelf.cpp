@@ -3,7 +3,6 @@
 //
 
 #include "book_shelf.h"
-#include "book_shelf.h"
 
 void BookShelf::addBook(Book* book)
 {
