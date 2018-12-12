@@ -16,5 +16,20 @@ int main()
 
     // Store the results in variables and use them when you display the result
 
+    int x = 13;
+    int y = 22;
+
+    printf("%d\n", x+y);
+
+    printf("%d\n", y-x);
+
+    printf("%d\n", x*y);
+
+    printf("%d\n", y/x);
+
+    printf("%d\n", y%x);
+
     return 0;
 }
+
+
