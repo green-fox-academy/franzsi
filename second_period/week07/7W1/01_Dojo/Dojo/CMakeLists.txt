@@ -1,0 +1,1 @@
+add_library(Dojo Dojo.h Dojo.cpp ../Card.cpp ../Card.h)
