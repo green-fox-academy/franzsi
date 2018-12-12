@@ -13,9 +13,6 @@ int main()
     int b = 0;
     int c = 0;
 
-    int surface = (a * b + b * c + a * c) * 2;
-    int volume = a * b * c;
-
     printf("Give first side of the cube \n");
     scanf("%d", &a);
 
@@ -24,6 +21,9 @@ int main()
 
     printf("Give the last side of the cube \n");
     scanf("%d", &c);
+
+    int surface = (a * b + b * c + a * c) * 2;
+    int volume = a * b * c;
 
     printf("Cuboid surface size: %d\n", surface);
     printf("Cuboid volume size: %d\n", volume);
