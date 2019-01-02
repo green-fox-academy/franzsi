@@ -5,10 +5,11 @@ int main(int argc, char* args[]) {
     // Write a program that reads a number from the standard input,
     // Then prints "Odd" if the number is odd, or "Even" if it is even.
 
-    int a = 12;
-    int b = 9;
+    int a = 0;
+    std::cout << "Gimme a number:" << std::endl;
+    std::cin >> a;
 
-    if
+    std::cout << (a % 2 == 1 ? "This number is odd." : "This number is even.") << std::endl;
 
     return 0;
 }

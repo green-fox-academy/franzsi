@@ -17,12 +17,15 @@ int main()
 
     printf("Give me an other number: \n");
     scanf("%d", &number2);
-}
+
     int equal(int number1, int number2)
     {
         if (number1 == number2) {
+            printf("They are equal. \n");
             return 1;
         } else {
+            printf("They are not equal. \n");
             return 0;
         }
     }
+}
