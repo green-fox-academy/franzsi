@@ -22,16 +22,16 @@
 
 *Our aim is to increase accuracy of image detection and to add useful features during the development.*
 
-# # INSTALLATION AND SETUP
+<h2> INSTALLATION AND SETUP </h2>
 
-# # # Requirements
+<h3> Requirements </h3> 
 
 ⋅⋅*JetBrainsCLion
 ⋅⋅*Open CV library
 ⋅⋅*SQLite
 ⋅⋅*Google Test
 
-<h3>Installation
+<h3> Installation </h3>
 
 First of all you will need to download:
 
