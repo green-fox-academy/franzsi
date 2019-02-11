@@ -26,10 +26,10 @@
 
 <h3> Requirements </h3> 
 
-⋅⋅*JetBrainsCLion
-⋅⋅*Open CV library
-⋅⋅*SQLite
-⋅⋅*Google Test
+<li>JetBrainsCLion</li>
+<li>Open CV library</li>
+<li>SQLite</li>
+<li>Google Test</li>
 
 <h3> Installation </h3>
 
