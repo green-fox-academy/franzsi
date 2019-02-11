@@ -35,8 +35,9 @@
 
 First of all you will need to download:
 
-⋅⋅*[I'm an inline-style link with title](https://cmake.org/download/"CMake")
-⋅⋅*[I'm an inline-style link with title](https://cmake.org/download/"Open CV library")
-⋅⋅*[I'm an inline-style link with title](https://dev.mysql.com/downloads/mysql/"MySQL")
-⋅⋅*[I'm an inline-style link with title](https://github.com/green-fox-academy/teaching-materials/blob/master/workshop/testing/env-setup/cpp/resource/googletest.zip"Google Test")
+<li> <a href="https://cmake.org/download/" rel="nofollow">CMake</a></li>
+<li> <a href="https://dev.mysql.com/downloads/mysql/" rel="nofollow">MySQL Community Server</a></li>
+<li> <a href="https://cmake.org/download/" rel="nofollow">Open CV library</a></li>
+<li> <a href="https://github.com/green-fox-academy/teaching-materials/blob/master/workshop/testing/env-setup/cpp/resource/googletest.zip" rel="nofollow">Google Test</a></li>
+
 
